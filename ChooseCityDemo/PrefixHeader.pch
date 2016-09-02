@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  ChooseCityDemo
+//
+//  Created by Jentle on 15/9/1.
+//  Copyright © 2015年 Jentle. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define __DEFINE_WEAK_SELF __weak __typeof(&*self) weakSelf = self;
+#define kScreenWidth                ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight               ([UIScreen mainScreen].bounds.size.height)
+#define ALD(x)                      ((x) * kScreenWidth/750.0)
+#define ALDHeight(y)                ((y) * kScreenHeight/1334.0)
+#define HCApplication             [UIApplication sharedApplication]
+#define kStatusBarHeight [HCApplication statusBarFrame].size.height
+#define kUpSpare ((kStatusBarHeight)+(kNavigationBarHeight))
+#define kNavigationBarHeight 44.f
+#define kSpaceHeight 30.f
+#define HCHexColor(hexColor) [HCCommonTool colorWithHexColorString:hexColor]
+
+#define MAS_SHORTHAND_GLOBALS
+#import "masonry.h"
+#import "HCCommonTool.h"
+
+#endif /* PrefixHeader_pch */
