@@ -4,5 +4,7 @@
  1. #import "HCChooseCityViewController.h"
  2. #import "HCSideSlipTransmition.h"
 
+#####效果演示:
+
 ![](ChooseCity.gif)
 
